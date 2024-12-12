@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 20:07:07.723402",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "assignment",
+  "assignment_title",
+  "member",
+  "member_name",
+  "course",
+  "assignment_attachment",
+  "type",
+  "status",
+  "marks"
+ ],
+ "fields": [
+  {
+   "fieldname": "assignment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Assignment",
+   "options": "LMS Assignment"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Member",
+   "options": "User"
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Course",
+   "options": "LMS Course"
+  },
+  {
+   "default": "null",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "null\ndone"
+  },
+  {
+   "fieldname": "assignment_attachment",
+   "fieldtype": "Attach Image",
+   "label": "Assignment Attachment"
+  },
+  {
+   "fetch_from": "assignment.type",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fetch_from": "assignment.title",
+   "fieldname": "assignment_title",
+   "fieldtype": "Data",
+   "label": "Assignment Title"
+  },
+  {
+   "fieldname": "marks",
+   "fieldtype": "Int",
+   "label": "Marks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-22 11:52:14.429684",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "LMS Assignment Submission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "LMS Student",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

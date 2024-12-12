@@ -1,0 +1,2 @@
+import{j as a,x as o,y as c,C as l,ak as n}from"./frappe-ui-CfOnYHud.js";const d={class:"w-full bg-gray-200 rounded-full h-1 my-2"},m={__name:"ProgressBar",props:{progress:{type:Number,default:0}},setup(e){const r=e,t=a(()=>`${Math.min(Math.ceil(r.progress),100)}%`);return(s,u)=>(o(),c("div",d,[l("div",{class:"bg-gray-900 h-1 rounded-full",style:n({width:t.value})},null,4)]))}};export{m as _};
+//# sourceMappingURL=ProgressBar-BFhrldIn.js.map
